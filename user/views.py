@@ -21,7 +21,6 @@ class CreateTokenView(ObtainAuthToken):
 class LoginUserView(ObtainAuthToken):
     renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
     serializer_class = AuthTokenSerializer
-    # надо чтоб сайт обрабатывал метод GET тоже
 
 
 class ManageUserView(generics.RetrieveUpdateAPIView):

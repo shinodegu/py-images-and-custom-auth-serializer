@@ -128,8 +128,6 @@ class MovieSessionDetailSerializer(MovieSessionSerializer):
     cinema_hall = CinemaHallSerializer(many=False, read_only=True)
     taken_places = TicketSeatsSerializer(source="tickets",
                                          many=True, read_only=True)
-    movie_image = MovieImageSerializer(source="movie.image",
-                                       many=False, read_only=True)
 
     class Meta:
         model = MovieSession
