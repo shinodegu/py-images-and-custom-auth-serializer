@@ -137,7 +137,6 @@ class MovieSessionDetailSerializer(MovieSessionSerializer):
             "movie",
             "cinema_hall",
             "taken_places",
-            "movie_image",
         )
 
 
